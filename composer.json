@@ -1,0 +1,17 @@
+{
+    "name": "nemutaisama/telegram-middleware-bot",
+    "description": "PSR-15 Telegram bot",
+    "type": "library",
+    "require": {
+        "psr/http-server-middleware": "^1.0",
+        "psr/http-server-handler": "^1.0",
+        "php-http/message": "^1.7"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "nemutaisama",
+            "email": "nemutaisama@gmail.com"
+        }
+    ]
+}
