@@ -12,7 +12,8 @@
     "require": {
         "psr/http-server-middleware": "^1.0",
         "mintware-de/data-model-mapper": "^1.0",
-        "zendframework/zend-diactoros": "^2.1"
+        "zendframework/zend-diactoros": "^2.1",
+        "nemutaisama/native-telegram-api": "^2.3"
     },
     "autoload": {
         "psr-4": {
