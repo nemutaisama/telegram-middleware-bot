@@ -15,7 +15,7 @@
         "psr/http-client": "^1.0",
         "psr/http-message": "^1.0",
         "psr/container": "^1.0",
-        "nemutaisama/native-telegram-api": "^2.3"
+        "nemutaisama/native-telegram-api": "@dev"
     },
     "autoload": {
         "psr-4": {

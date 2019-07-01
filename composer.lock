@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa627c6d9bad81250005d6a1ba936e14",
+    "content-hash": "9fe6bb6edbb4acc84aacea5e89cf5678",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -180,16 +180,16 @@
         },
         {
             "name": "nemutaisama/native-telegram-api",
-            "version": "v2.3.13",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nemutaisama/NativeTelegramApi.git",
-                "reference": "8d34f3ccd3230a9fd7c7fd9ba8ec0110a059f781"
+                "reference": "bef4565240a9ac208d25798c3d88494920621902"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nemutaisama/NativeTelegramApi/zipball/8d34f3ccd3230a9fd7c7fd9ba8ec0110a059f781",
-                "reference": "8d34f3ccd3230a9fd7c7fd9ba8ec0110a059f781",
+                "url": "https://api.github.com/repos/nemutaisama/NativeTelegramApi/zipball/bef4565240a9ac208d25798c3d88494920621902",
+                "reference": "bef4565240a9ac208d25798c3d88494920621902",
                 "shasum": ""
             },
             "require": {
@@ -223,7 +223,7 @@
                     "role": "Developer"
                 }
             ],
-            "description": "PHP Wrapper for Telegram Bot API",
+            "description": "Fork of https://github.com/TelegramBot/Api",
             "homepage": "https://github.com/TelegramBot/Api",
             "keywords": [
                 "bot",
@@ -231,7 +231,7 @@
                 "php",
                 "telegram"
             ],
-            "time": "2018-04-30T11:46:15+00:00"
+            "time": "2019-07-01T15:22:58+00:00"
         },
         {
             "name": "psr/container",
@@ -834,7 +834,9 @@
     ],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "nemutaisama/native-telegram-api": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
