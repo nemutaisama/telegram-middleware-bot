@@ -38,9 +38,11 @@ class Client
     public function send(string $url, $message)
     {
         $request = $this->requestFactory->createRequest('POST', $url);
-        $request->withBody($this->streamFactory->createStream(json_encode($message)));
+        $data = $this->streamFactory->createStream(json_encode($message));
+        $request = $request->withBody($data)->withHeader('Content-Type', 'application/json');
         try {
             $response = $this->httpClient->sendRequest($request);
+
             return $response;
 
         } catch (ClientExceptionInterface $exception) {
