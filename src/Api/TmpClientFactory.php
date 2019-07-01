@@ -22,7 +22,7 @@ class TmpClientFactory
         $client = new Client($httpClient, $requestFactory, $streamFactory);
         $tmpApi = new TmpBotApi($client);
 
-        return new TmpClient();
+        return new TmpClient($tmpApi);
     }
 
 }
