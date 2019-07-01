@@ -13,7 +13,7 @@ use Psr\Http\Server\RequestHandlerInterface;
 
 class TmpClientFactory
 {
-    public function __invoke(ContainerInterface $container) : RequestHandlerInterface
+    public function __invoke(ContainerInterface $container) : TmpClient
     {
         $httpClient = $container->get(ClientInterface::class);
         $requestFactory = $container->get(RequestFactoryInterface::class);
