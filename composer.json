@@ -13,7 +13,8 @@
         "psr/http-server-middleware": "^1.0",
         "mintware-de/data-model-mapper": "^1.0",
         "psr/http-client": "^1.0",
-        "psr/http-message": "^1.0"
+        "psr/http-message": "^1.0",
+        "psr/container": "^1.0"
     },
     "autoload": {
         "psr-4": {

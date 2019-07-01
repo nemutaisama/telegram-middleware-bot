@@ -4,24 +4,23 @@
 namespace Nemutaisama\TelegramBot\Api;
 
 
-use Symfony\Component\HttpClient\Psr18Client;
 use TelegramBot\Api\BotApi;
 use TelegramBot\Api\Exception;
-use Zend\Diactoros\RequestFactory;
-use Zend\Diactoros\StreamFactory;
 
 class TmpBotApi extends BotApi
 {
+    /** @var Client */
+    private $client;
+
+    public function __construct(Client $client)
+    {
+        parent::__construct('', '');
+        $this->client = $client;
+    }
 
     public function call($method, array $data = null)
     {
-        $client = new Client(
-            new Psr18Client(),
-            new RequestFactory(),
-            new StreamFactory()
-        );
-
-        $result = $client->send($this->getUrl().'/'.$method, $data);
+        $result = $this->client->send($this->getUrl().'/'.$method, $data);
         $response = self::jsonValidate($result->getBody()->getContents(), $this->returnArray);
 
         if ($this->returnArray) {
@@ -37,5 +36,11 @@ class TmpBotApi extends BotApi
         }
 
         return $response->result;
+    }
+
+    public function setToken($token): self
+    {
+        $this->token = $token;
+        return $this;
     }
 }
