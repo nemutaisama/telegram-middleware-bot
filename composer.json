@@ -23,7 +23,7 @@
         }
     },
     "require-dev": {
-        "symfony/http-client": "^4.3",
+        "symfony/http-client": "^4.3 || ^5.0",
         "zendframework/zend-diactoros": "^2.1"
     }
 }
